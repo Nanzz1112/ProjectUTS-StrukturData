@@ -94,3 +94,14 @@ Berdasarkan hasil implementasi sistem antrian pada coffee shop menggunakan konse
 Sistem yang dirancang dan diimplementasikan juga telah berjalan sesuai dengan teori yang ada dalam struktur data. Proses enqueue digunakan untuk menambahkan pelanggan ke dalam antrian, sedangkan dequeue digunakan untuk mengambil pelanggan yang berada di posisi terdepan untuk dilayani. Implementasi menggunakan array mampu merepresentasikan antrian dengan baik, meskipun memiliki keterbatasan pada ukuran yang bersifat statis.
 
 Selain itu, penerapan konsep Queue dalam kasus ini memberikan manfaat nyata, khususnya dalam meningkatkan efisiensi dan keteraturan pelayanan di coffee shop. Sistem antrian menjadi lebih mudah dipantau, mengurangi potensi kesalahan dalam urutan pelayanan, serta memberikan pengalaman yang lebih baik bagi pelanggan. Dengan demikian, penggunaan struktur data Queue terbukti efektif untuk menyelesaikan permasalahan antrian dalam kehidupan nyata.
+
+
+# Daftar Pustaka
+Mifandi Mandiri. (2022). Penerapan struktur data dalam pengolahan data. Diakses dari:
+https://jurnal.mifandimandiri.com/index.php/penerbitmmd/article/view/39/33
+
+Putra, A. (2023). Struktur Data dan Algoritma. Diakses dari:
+https://books.google.co.id/books?id=bYnxEAAAQBAJ
+
+Institut Teknologi Nasional Malang. (2021). Implementasi struktur data dalam sistem. Diakses dari:
+https://www.ejournal.itn.ac.id/jati/article/view/12214/6836
