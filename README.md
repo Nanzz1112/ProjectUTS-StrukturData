@@ -1,18 +1,12 @@
 # ProjecUTS-StrukturData
 
-Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Artha, S.T.
-
-
 - Dhananjaya 2501010023 - Nanzz1112
 
 - I Gede Raditya Ananda Putra 2501010024 - heyitsraditya
 
 - Dewa Gede Ardhi Giridhana 2501010019 - Giridhanaaa
 
-kami memilih studi kasus nyata berupa antrian coffee shop, dan kami menggunakan konsep  ***Queue*** dalam merancang dan mengimplementasikan sebuah sistem se
-derhana
-
-# Antrian Coffee Shop
+Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Artha, S.T. , kami memilih studi kasus nyata berupa antrian coffee shop, dan kami menggunakan konsep  ***Queue*** dalam merancang dan mengimplementasikan sebuah sistem sederhana
 
 # Rumusan Masalah dan Solusi
 
@@ -77,4 +71,26 @@ Konsep FIFO dan LIFO menjadi dasar utama dalam pengoperasian queue dan stack. FI
 
 Dalam implementasinya, stack dan queue dapat dibangun menggunakan beberapa struktur dasar seperti array dan linked list. Array menyimpan data secara berurutan dalam memori dengan ukuran tetap, sehingga akses data menjadi cepat. Sementara itu, linked list menggunakan node yang saling terhubung, sehingga lebih fleksibel dalam hal penambahan dan penghapusan data. Pemilihan antara array dan linked list biasanya disesuaikan dengan kebutuhan sistem, seperti efisiensi memori dan kompleksitas operasi.
 
+# Desain Sistem
+```mermaid
+flowchart TD
+    A[Mulai] --> B[Pelanggan Datang]
+    B --> C[Input Data Pelanggan]
+    C --> D[Enqueue ke Antrian]
+    D --> E{Apakah Antrian kosong?}
+    E -->|Tidak| F[Dequeue pelanggan]
+    F --> G[Proses Pesanan]
+    G --> H[Tampilkan Pelanggan Dilayani]
+    H --> E
+    E -->|Ya| I[Menunggu Pelanggan]
+    I --> B
+    H --> J[Selesai]
+```
 
+# Kesimpulan
+
+Berdasarkan hasil implementasi sistem antrian pada coffee shop menggunakan konsep struktur data Queue, dapat disimpulkan bahwa seluruh rumusan masalah yang telah ditetapkan sebelumnya berhasil diselesaikan dengan baik. Penggunaan konsep Queue mampu mengatur urutan pelanggan secara sistematis sesuai dengan prinsip First In First Out (FIFO), sehingga proses pelayanan menjadi lebih teratur dan adil.
+
+Sistem yang dirancang dan diimplementasikan juga telah berjalan sesuai dengan teori yang ada dalam struktur data. Proses enqueue digunakan untuk menambahkan pelanggan ke dalam antrian, sedangkan dequeue digunakan untuk mengambil pelanggan yang berada di posisi terdepan untuk dilayani. Implementasi menggunakan array mampu merepresentasikan antrian dengan baik, meskipun memiliki keterbatasan pada ukuran yang bersifat statis.
+
+Selain itu, penerapan konsep Queue dalam kasus ini memberikan manfaat nyata, khususnya dalam meningkatkan efisiensi dan keteraturan pelayanan di coffee shop. Sistem antrian menjadi lebih mudah dipantau, mengurangi potensi kesalahan dalam urutan pelayanan, serta memberikan pengalaman yang lebih baik bagi pelanggan. Dengan demikian, penggunaan struktur data Queue terbukti efektif untuk menyelesaikan permasalahan antrian dalam kehidupan nyata.
