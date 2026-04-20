@@ -75,17 +75,14 @@ Dalam implementasinya, stack dan queue dapat dibangun menggunakan beberapa struk
 ```mermaid
 flowchart TD
     A[Mulai] --> B[Tambah pelanggan]
-    B --> C[Pilih menu]
-    C --> D[Input data pelanggan]
-    D --> E[Masuk ke antrian]
-    E --> F{Pilih aksi}
-    F -->|Lihat depan| G[Lihat antrian paling depan]
-    G --> F
-    F -->|Tampilkan semua| H[Tampilkan semua antrian]
-    H --> F
-    F -->|Layani| I[Layani pelanggan]
-    I --> F
-    F -->|Selesai| J[Selesai]
+    A --> B[Tampilkan menu]
+    B --> D[Pilih menu]
+    D --> E[Input data pelanggan]
+    E --> F[Masuk ke antrian]
+    A --> G[Lihat antrian paling depan]
+    A --> H[Tampilkan semua antrian]
+    F --> I[Layani pelanggan]
+    I --> J[Selesai]
 ```
 
 # Kesimpulan
