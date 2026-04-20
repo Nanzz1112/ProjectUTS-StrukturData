@@ -23,13 +23,12 @@ Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Arth
 - Pelanggan baru → masuk ke belakang antrian
 
 #### Contoh alur:
-- Andi datang Pilih Menu → masuk antrian
-- Budi datang → di belakang Andi
-- Citra datang → di belakang Budi
+- Andi datang → Pilih Menu → masuk antrian
+- Budi datang → Pilih Menu → di belakang Andi
+- Citra datang → Pilih Menu → di belakang Budi
 - Barista melayani → Andi keluar dari antrian
 
 Ini juga memastikan agar antrian adil dan teratur sehingga tidak ada yang menyela antrian.
-
 
 2. Dalam mengimplementasikan konsep Queue ke dalam sistem nyata, diperlukan struktur data yang mampu menyimpan dan mengelola data antrian secara efisien. Salah satu struktur data yang dapat digunakan adalah Array. Array memungkinkan penyimpanan data secara berurutan sesuai dengan urutan kedatangan pelanggan. Dengan memanfaatkan indeks pada Array, proses penambahan (enqueue) dan penghapusan (dequeue) data dapat dilakukan secara terstruktur dan mudah dipahami.
 
