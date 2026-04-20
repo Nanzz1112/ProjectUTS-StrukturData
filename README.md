@@ -23,7 +23,7 @@ Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Arth
 - Pelanggan baru → masuk ke belakang antrian
 
 #### Contoh alur:
-- Andi datang → masuk antrian
+- Andi datang Pilih Menu → masuk antrian
 - Budi datang → di belakang Andi
 - Citra datang → di belakang Budi
 - Barista melayani → Andi keluar dari antrian
@@ -82,8 +82,7 @@ flowchart TD
     F --> G[Proses Pesanan]
     G --> H[Tampilkan Pelanggan Dilayani]
     H --> E
-    E -->|Ya| I[Menunggu Pelanggan]
-    I --> B
+    E -->|Ya|
     H --> J[Selesai]
 ```
 
