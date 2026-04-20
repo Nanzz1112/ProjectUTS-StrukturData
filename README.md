@@ -1,4 +1,4 @@
-# ProjecUTS-StrukturData
+# Project UTS-StrukturData
 
 | Nama                          | NIM        | GitHub        |
 |-------------------------------|------------|---------------|
