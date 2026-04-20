@@ -84,7 +84,31 @@ flowchart TD
     F --> I[Layani pelanggan]
     I --> J[Selesai]
 ```
-
+```mermaid
+flowchart TD
+    Start([Start]) --> Loop["Display Main Menu<br/>1. Tambah <br/>2. Layani <br/>3. Depan<br/>4. Tampil Semua <br/>5. Exit"]
+    Loop --> Input["Pilih Menu"]
+    Input --> Decision{Pilihan?}
+    
+    Decision -->|1| Name["Input Nama"]
+    Decision -->|2| Serve["Layani Pelanggan"]
+    Decision -->|3| Front["Lihat Antrian Depan"]
+    Decision -->|4| All["Tampil Semua Antrian"]
+    Decision -->|5| Exit["Exit Program"]
+    Decision -->|Lain| Err["Pilihan Salah!"]
+    
+    Name --> Menu["Tampilkan Menu"]
+    Menu --> Pick["Pilih Nomor"]
+    Pick --> Add["Tambah ke Antrian"]
+    Add --> Loop
+    
+    Serve --> Loop
+    Front --> Loop
+    All --> Loop
+    Err --> Loop
+    
+    Exit --> End([End])
+```
 # Kesimpulan
 
 Berdasarkan hasil implementasi sistem antrian pada coffee shop menggunakan konsep struktur data Queue, dapat disimpulkan bahwa seluruh rumusan masalah yang telah ditetapkan sebelumnya berhasil diselesaikan dengan baik. Penggunaan konsep Queue mampu mengatur urutan pelanggan secara sistematis sesuai dengan prinsip First In First Out (FIFO), sehingga proses pelayanan menjadi lebih teratur dan adil.
