@@ -6,7 +6,7 @@
 | I Gede Raditya Ananda Putra   | 2501010024 | heyitsraditya |
 | Dewa Gede Ardhi Giridhana     | 2501010019 | Giridhanaaa   |
 
-Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Artha, S.T. , kami memilih studi kasus nyata berupa antrian coffee shop, dan kami menggunakan konsep  ***Queue*** dalam merancang dan mengimplementasikan sebuah sistem sederhana
+Pada project UTS mata kuliah Struktur Data yang diempu oleh I Made Gede Sri Artha, S.T. , kami memilih studi kasus nyata berupa antrian coffee shop, dan kami menggunakan konsep  ***Queue*** dalam merancang dan mengimplementasikan sebuah sistem sederhana.
 
 # Rumusan Masalah dan Solusi
 
