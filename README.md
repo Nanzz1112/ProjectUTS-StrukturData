@@ -72,33 +72,6 @@ Dalam implementasinya, stack dan queue dapat dibangun menggunakan beberapa struk
 
 # Desain Sistem
 
-```mermaid
-flowchart TD
-    Start([Mulai]) --> MenuUtama["Tampilkan Menu Utama<br/>1. Tambah Pelanggan<br/>2. Layani Pelanggan<br/>3. Lihat Antrian Depan<br/>4. Tampilkan Semua Antrian<br/>5. Keluar"]
-    
-    MenuUtama --> InputPilihan["Masukkan Pilihan"]
-    InputPilihan --> Keputusan{Pilihan Menu}
-    
-    Keputusan -->|1| InputNama["Masukkan Nama Pelanggan"]
-    Keputusan -->|2| Layani["Layani Pelanggan <br/>(Dequeue)"]
-    Keputusan -->|3| LihatDepan["Tampilkan Antrian Terdepan <br/>(Peek)"]
-    Keputusan -->|4| TampilSemua["Tampilkan Seluruh Antrian"]
-    Keputusan -->|5| Keluar["Keluar dari Program"]
-    Keputusan -->|Tidak valid| Error["Pilihan Salah"]
-    
-    InputNama --> TampilMenu["Tampilkan Daftar <br/>Menu Minuman"]
-    TampilMenu --> PilihMenu["Masukkan <br/>Pilihan Menu"]
-    PilihMenu --> Tambah["Tambahkan ke Antrian <br/>(Enqueue)"]
-    Tambah --> MenuUtama
-    
-    Layani --> MenuUtama
-    LihatDepan --> MenuUtama
-    TampilSemua --> MenuUtama
-    Error --> MenuUtama
-    
-    Keluar --> Selesai([Selesai])
-```
-
 ```
 START
 
