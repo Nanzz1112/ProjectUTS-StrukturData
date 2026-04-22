@@ -99,63 +99,6 @@ flowchart TD
     Keluar --> Selesai([Selesai])
 ```
 
-```
-START
-
-Buat list ANTRIAN kosong
-
-WHILE program berjalan DO
-    Tampilkan Menu:
-        1. Tambah Pelanggan
-        2. Layani Pelanggan
-        3. Lihat Antrian Depan
-        4. Tampilkan Semua Antrian
-        5. Keluar
-
-    INPUT pilihan
-
-    IF pilihan = 1 THEN
-        INPUT nama pelanggan
-        Tampilkan daftar menu minuman
-        INPUT pilihan menu
-
-        Tentukan minuman berdasarkan pilihan
-        Tambahkan (nama, minuman) ke ANTRIAN
-
-    ELSE IF pilihan = 2 THEN
-        IF ANTRIAN kosong THEN
-            Tampilkan "Antrian kosong"
-        ELSE
-            Ambil data pertama dari ANTRIAN
-            Tampilkan data pelanggan yang dilayani
-        ENDIF
-
-    ELSE IF pilihan = 3 THEN
-        IF ANTRIAN kosong THEN
-            Tampilkan "Antrian kosong"
-        ELSE
-            Tampilkan data pelanggan paling depan
-        ENDIF
-
-    ELSE IF pilihan = 4 THEN
-        IF ANTRIAN kosong THEN
-            Tampilkan "Antrian kosong"
-        ELSE
-            Tampilkan seluruh isi ANTRIAN
-        ENDIF
-
-    ELSE IF pilihan = 5 THEN
-        Tampilkan "Program selesai"
-        STOP
-
-    ELSE
-        Tampilkan "Pilihan tidak valid"
-    ENDIF
-
-ENDWHILE
-
-END
-```
 # Kesimpulan
 
 Berdasarkan hasil implementasi sistem antrian pada coffee shop menggunakan konsep struktur data Queue, dapat disimpulkan bahwa seluruh rumusan masalah yang telah ditetapkan sebelumnya berhasil diselesaikan dengan baik. Penggunaan konsep Queue mampu mengatur urutan pelanggan secara sistematis sesuai dengan prinsip First In First Out (FIFO), sehingga proses pelayanan menjadi lebih teratur dan adil.
